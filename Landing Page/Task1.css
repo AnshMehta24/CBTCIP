@@ -1,0 +1,336 @@
+.Mid {
+
+    display: block;
+    width: 36%;
+    margin: 20px auto;
+}
+
+.navbar {
+    animation-name: test;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+
+    width: 700px;
+
+
+    display: flex;
+    left: 423px;
+    position: relative;
+    gap: 90px;
+    top: 20px;
+}
+
+.navbar li {
+    display: inline-block;
+    font-size: 20px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 5px;
+}
+
+.navbar li a:hover,
+.navbar li a.Active {
+    text-decoration: underline;
+    color: rgb(203, 214, 224);
+}
+
+
+body {
+    background-color: rgb(1%, 1%, 1%);
+}
+
+.sidebar {
+    height: 100%;
+    width: 68px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-top: 40px;
+    background-color: #cbd6e0;
+
+}
+
+.sidebar span {
+    padding: 8px;
+    font-size: 24px;
+    display: block;
+}
+
+span {
+    word-spacing: 15px;
+    transform: rotate(90deg);
+    text-orientation: upright;
+    line-height: 7.5;
+}
+
+.logo {
+    display: block;
+    position: absolute;
+    left: 7px;
+    top: 0px;
+    text-align: center;
+}
+
+.logo img {
+    width: 61px;
+    height: 70px;
+    background-image: none;
+    mix-blend-mode: darken;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(300px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.Shoe {
+    transform: rotate(-13deg);
+    transform-origin: bottom;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 76px;
+
+}
+
+.Anime img {
+    animation-name: slideInRight;
+    animation-timing-function: ease-in;
+    animation-duration: 1.5s;
+
+
+    position: relative;
+    filter: drop-shadow(10px 45px 77px rgba(255, 242, 242, 0.4));
+}
+
+@keyframes test {
+    0% {
+        opacity: 0;
+
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.Main h1,
+h2 {
+    animation-name: test;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    position: relative;
+    text-align: left;
+    color: white;
+    padding: 20px;
+    right: -90px;
+    width: 700px;
+}
+
+.Main h1 {
+    font-family: 'Barlow', sans-serif;
+    font-size: 135px;
+    margin-top: 80px;
+    margin-bottom: -85px;
+}
+
+.Main h2 {
+    font-family: 'Barlow', sans-serif;
+    font-size: 42px;
+}
+
+.price {
+    animation-name: test;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+
+    position: relative;
+    text-align: left;
+    color: white;
+    margin-top: -75px;
+    left: 50px;
+    font-size: 25px;
+    width: 100px;
+    left: 115px;
+}
+
+.Lastp {
+    animation-name: test;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    width: 540px;
+    position: relative;
+    text-align: left;
+    color: white;
+    margin-top: -25px;
+    left: 115px;
+    top: 33px;
+    font-size: 17px;
+}
+
+i {
+    color: rgba(203, 214, 224, 1);
+}
+
+.btn {
+    width: 100px;
+    position: relative;
+    border: none;
+    outline: none;
+    border-radius: 86px;
+}
+
+button {
+    font-weight: bold;
+    border: none;
+    overflow: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+
+    border-radius: 40px;
+    animation-name: test;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    width: 145px;
+    height: 70px;
+    margin-left: 114px;
+    margin-top: 69px;
+    text-align: center;
+    font-size: 25px;
+    background: white;
+    color: black;
+}
+
+
+button:hover {
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+        0 0 25px #03e9f4,
+        0 0 50px #03e9f4,
+        0 0 200px #03e9f4;
+}
+
+@media screen and (max-width: 600px){
+    .Shoe {
+
+        left:70px;
+        top: 35px;
+    
+    }
+     .Anime img {
+        width: 259px;
+        height: 160px;
+            } 
+    .Main h1{
+        bottom: -70px;
+        font-size: 53px;
+        left: 26px;
+    }
+    .Main h2{
+        bottom: -95px;
+        left: 26px;
+        font-size: 25px;
+    }
+    .price{
+        bottom: -80px;
+        left: 50px;
+    }
+    .Lastp{
+            font-size: 10px;
+            left: 47px;
+            top: 85px;
+    }
+    .btn{
+        left: -10px;
+        top: 60px;
+    }
+    .navbar{
+        display: block;
+        top: 5px;
+        left: 8px;
+    }
+    .navbar li{
+        font-size: 10px;
+    }
+    .sidebar{
+        width: 36px;
+        height: 100%;
+    }
+    .logo img{
+        width: 47px;
+    }
+    .sidebar span{
+        line-height: 141px;
+        word-spacing: 6px;
+    }
+    .logo{
+        left: -2px;
+    }
+    
+}
+@media screen and (max-width:900px) and (min-width:600px) {
+    .Shoe {
+
+        left:90px;
+        top: -19px;
+    
+    }
+     .Anime img {
+        width: 280px;
+        height: 171px;
+            } 
+    .Main h1{
+        bottom: -70px;
+        font-size: 73px;
+        left: 26px;
+    }
+    .Main h2{
+        bottom: -95px;
+        left: 26px;
+        font-size: 27px;
+    }
+    .price{
+        bottom: -80px;
+        left: 50px;
+    }
+    .Lastp{
+            font-size: 12px;
+            left: 47px;
+            top: 85px;
+    }
+    .btn{
+        left: 10px;
+        top: 60px;
+    }
+    .navbar{
+        display: block;
+        top: 5px;
+        left: 25px;
+    }
+    .navbar li{
+        font-size: 14px;
+    }
+    .sidebar{
+        width: 36px;
+        height: 100%;
+    }
+    .logo img{
+        width: 47px;
+    }
+    .sidebar span{
+        line-height: 118px;
+        word-spacing: 6px;
+    }
+    .logo{
+        left: -4px;
+    }
+}
